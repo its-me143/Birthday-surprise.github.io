@@ -54,7 +54,6 @@ span {
   left: 0;
   width: 100%;
   height: 70px;
-  border-radius: 330px 330px 0 0;
   transform-origin: bottom center;
   transition: transform 1s ease;
   z-index: 5;
@@ -300,5 +299,6 @@ span {
   z-index:5;
   transition: transform 1s ease, opacity 1s ease;
 }
+
 
 .message.show { opacity:1; transform: translate(-50%, -150px) scale(1); }

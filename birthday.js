@@ -50,12 +50,14 @@ async function startBlowDetection() {
   }
 }
 
-cakeTop.addEventListener("click", () => {
+function openCakeHandler() {
   if(cakeTop.classList.contains("clickable") && !cakeTop.classList.contains("open")){
     popup.style.display="none";
     openCakeOnce();
   }
-});
+}
+cakeTop.addEventListener("click",openCakeHandler);
+cakeTop.addEventListener("touchstart",openCakeHandler);
 
 function openCakeOnce() {
   cakeTop.classList.add("open");
@@ -85,3 +87,4 @@ function triggerFireworks() {
     if(count>6){ clearInterval(interval); cheering.play(); }
   },1000);
 }
+

@@ -302,3 +302,29 @@ span {
 
 
 .message.show { opacity:1; transform: translate(-50%, -150px) scale(1); }
+
+.surprise-link {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ff69b4; /* pink heart color */
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+  background: rgba(255, 182, 193, 0.1);
+  box-shadow: 0 0 8px #fffd69, 0 0 15px #efff14;
+  transition: all 0.3s ease;
+  animation: pulse 1.5s infinite alternate;
+}
+
+.surprise-link:hover {
+  color: white;
+  background: #fdff69;
+  box-shadow: 0 0 15px #ddd230, 0 0 30px #ffb514, 0 0 45px #ff3c00;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); opacity: 0.9; }
+  to { transform: scale(1.1); opacity: 1; }
+}
+
